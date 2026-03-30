@@ -5,6 +5,8 @@ on: [push]
 jobs:
   build-linux:
     runs-on: ubuntu-latest
+    env:
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
     strategy:
       max-parallel: 5
 
