@@ -64,3 +64,8 @@ chart = (
     .properties(height=320)
 )
 st.altair_chart(chart, use_container_width=True)
+
+if __name__ == "__main__":
+
+    app.run(host="0.0.0.0", port=5000)
+ 
